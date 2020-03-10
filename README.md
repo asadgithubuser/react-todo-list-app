@@ -1,4 +1,11 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## E-Cart App Using ReactJS
+
+- Very fast and smooth working
+- used class base context API
+- ecommerce cart full feature
+- Awesome project for react learners
+- hand coding will help in easy understanding
+
 
 ## Available Scripts
 
