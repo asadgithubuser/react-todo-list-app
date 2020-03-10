@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+/* 
+
+
+import React, {Component} from 'react';
+import TodoInput from './components/TodoInput';
+import TodoList from './components/TodoList';
+import uuid from 'uuid';
+// import "bootstrap/dist/css/bootstrap.min.css";
+class App extends Component{
+
+    state ={
+      items: [],
+      id: uuid(),
+      item: "",
+      editItem: false
+    }
+
+    handleChange = (e) =>{
+      this.setState({
+        item: e.target.value
+      })
+    }
+
+handleSubmit = (e) =>{
+  e.preventDefault();
+
+  const newItem = {
+    id:this.state.id,
+    title:this.state.item
+  }
+
+  console.log(newItem)
+  const updateItem = {...this.state.items, newItem}
+
+  this.setState({
+    items: updateItem,
+    item: '',
+    id: uuid(),
+    editItem:false
+  })
+
+}
+  render(){
+    return(
+       <div className="container">
+          <div className="card">
+            <div className="card-body">
+            <h2 className="text-center">Todo React App</h2>
+            </div>
+          </div>
+
+          <TodoInput
+            item={this.state.item}
+            handleChange={this.handleChange}
+            handleSubmit = {this.handleSubmit}
+          />
+          <TodoList 
+            items={this.state.items}
+            clearlist = {this.clearList}
+          />
+
+       </div>
+    )
+  }
+}
+
+export default App;
+ */
+
